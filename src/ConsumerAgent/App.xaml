@@ -1,0 +1,22 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConsumerAgent"
+             x:Class="ConsumerAgent.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="bgColor">#C0C0C0</Color>
+            <Color x:Key="textColor">#0000AD</Color>
+            <x:Double x:Key="fontSize">32</x:Double>
+            <Style x:Key="baseButtonStyle" TargetType="Button">
+                <Setter Property="FontSize" Value="{StaticResource fontSize}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource bgColor}" />
+                <Setter Property="TextColor" Value="{StaticResource textColor}"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
